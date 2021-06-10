@@ -6,6 +6,16 @@
 var Bunyad_Theme = (function($) {
 	"use strict";
 	
+	$('.test-popup-link').magnificPopup({
+    type: 'image',
+    gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          }
+    // other options
+  });
+	
 	var has_touch = false,
 		responsive_menu = false,
 		search_active = false,
