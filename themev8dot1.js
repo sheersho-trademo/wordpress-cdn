@@ -357,21 +357,7 @@
 				}
 			});
 
-			// Search modal
-			// $('.main-head.has-search-modal .search-link').magnificPopup({
-			// 	items: {
-			// 		src: '.search-modal-wrap',
-			// 		type: 'inline'
-			// 	},
-			// 	removalDelay: 400,
-			// 	focus: 'input',
-			// 	closeBtnInside: false,
-			// 	closeOnBgClick: false,
-			// 	mainClass: 'search-modal',
-			// 	midClick: true,
-			// 	fixedContentPos: true,
-			// 	autoFocusLast: false
-			// }); 
+	
 		},
 		
 		/**
@@ -1319,10 +1305,7 @@
 		 */
 		lightbox: function() 
 		{
-			// disabled on mobile screens
-			// if (!$.fn.magnificPopup || $(window).width() < 768 || !$('body').hasClass('has-lb')) {
-			// 	return;
-			// }
+			
 
 			// filter to handle valid images only
 			var filter_images = function() {
@@ -1361,27 +1344,12 @@
 			$('.woocommerce a[data-rel^="prettyPhoto"], a.zoom').addClass('lightbox-gallery-img');
 			gal_selectors += ', .woocommerce .images';
 			
-			// attach the lightbox as gallery
-			// $(gal_selectors).magnificPopup($.extend({}, mfp_init, {
-			// 	delegate: '.lightbox-gallery-img',
-			// 	gallery: {enabled: true},
-			// 	image: {
-			// 		titleSrc: function(item) {
-			// 			var image = item.el.find('img'), 
-			// 			    caption = item.el.find('.caption').html();
-						
-			// 			return (caption || image.attr('title') || ' ');
-			// 		}
-			// 	}
-			// }));
+		
 			
 			// Non-gallery images in posts
 			var selector = $('.post-content, .main .featured, .single-creative .featured')
 				.find('a:not(.lightbox-gallery-img)').has('img');
-			
-			// selector.add('.post-content, .main .featured, .lightbox-img')
-			// 	.filter(filter_images)
-			// 	.magnificPopup(mfp_init);
+	
 		},
 		
 		/**
